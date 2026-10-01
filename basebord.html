@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>Healthcare Dashboard</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <style>
+
+        .dashboard {
+            width: 100%;
+            min-height: 100vh;
+            background: #f4f8fb;
+        }
+
+        .navbar {
+            background: #078c99;
+            color: white;
+            padding: 20px 50px;
+
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .navbar h2 {
+            margin: 0;
+        }
+
+        .logout {
+            background: white;
+            color: #078c99;
+            padding: 10px 20px;
+            border-radius: 6px;
+            text-decoration: none;
+        }
+
+        .dashboard-content {
+            padding: 50px;
+        }
+
+        .dashboard-content h1 {
+            color: #12343b;
+            margin-bottom: 10px;
+        }
+
+        .cards {
+            display: grid;
+            grid-template-columns:
+                repeat(auto-fit, minmax(220px, 1fr));
+
+            gap: 25px;
+            margin-top: 30px;
+        }
+
+        .card {
+            background: white;
+            padding: 30px;
+            border-radius: 12px;
+
+            box-shadow:
+                0 4px 15px rgba(0,0,0,0.08);
+        }
+
+        .card h3 {
+            color: #078c99;
+            margin-bottom: 10px;
+        }
+
+    </style>
+
+</head>
+
+<body>
+
+    <div class="dashboard">
+
+        <nav class="navbar">
+
+<img 
+        src="hospial.jpg" 
+        alt="Hospital Logo" 
+        class="hospital-logo"
+    >
+
+            <h2>HealthCare</h2>
+
+            <a href="index.html" class="logout">
+                Logout
+            </a>
+
+        </nav>
+
+
+        <main class="dashboard-content">
+
+            <h1>Welcome to HealthCare</h1>
+
+            <p>
+                Manage your doctors, patients and appointments.
+            </p>
+
+
+            <div class="cards">
+
+                <div class="card">
+
+                    <h3>👨‍⚕️ Doctors</h3>
+
+                    <p>
+                        View and manage available doctors.
+                    </p>
+
+                </div>
+
+
+                <div class="card">
+
+                    <h3>👤 Patients</h3>
+
+                    <p>
+                        View patient information.
+                    </p>
+
+                </div>
+
+
+                <div class="card">
+
+                    <h3>📅 Appointments</h3>
+
+                    <p>
+                        Book and manage appointments.
+                    </p>
+
+                </div>
+
+
+                <div class="card">
+
+                    <h3>📋 Medical Records</h3>
+
+                    <p>
+                        Manage medical records.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </main>
+
+    </div>
+
+</body>
+
+</html>
